@@ -1,0 +1,20 @@
+name: 2.2.workflow_avec_plusieurs_jobs.yaml
+on:
+  push:
+
+jobs:
+  firstJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Ceci est le premier job."
+  secondJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Ceci est le second job."
+  thirdJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Ceci est le troisième job."
