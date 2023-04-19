@@ -1,0 +1,14 @@
+name: 3.5.checkout_avec_setup
+on:
+  push:
+jobs:
+  execute_script:
+    runs-on: ubuntu-latest
+    steps :
+      - uses : actions/checkout@v3
+      - uses : actions/setup-python@v3
+        with :
+          python-version : "3.10"
+
+      - run : |
+          python main.py 
