@@ -1,8 +1,8 @@
 name: 2.1.simple_workflow.yaml
 on:
   push:
-    branches:
-      - main
+#    branches:
+#      - main
 jobs:
   say_hello:
     runs-on: ubuntu-latest
