@@ -1,0 +1,12 @@
+name: 4.1.display_env
+on:
+  push:
+env:
+  MESSAGE : Ceci est une variable d'environnement.
+jobs:
+  env_print:
+    runs-on: ubuntu-latest
+    steps :
+      - name: affiche var env #tiret du 6 car c'est un tableau d'objet
+      run: |
+        echo S{{env.MESSAGE}}
