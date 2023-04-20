@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps :
       - name: affiche var env #tiret du 6 car c'est un tableau d'objet
-      run: |
-        echo ${{env.MESSAGE}}
+        run: | #élément de tableau donc indenter
+          echo "${{env.MESSAGE}}"
