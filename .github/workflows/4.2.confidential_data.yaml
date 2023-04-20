@@ -1,7 +1,6 @@
 name: 4.2.confidential_data.yaml
 on:
   push:
-    branches: [ main ]
 jobs:
   confidential_data:
     runs-on: ubuntu-latest
