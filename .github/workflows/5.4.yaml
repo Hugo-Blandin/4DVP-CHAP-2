@@ -1,4 +1,4 @@
-name: "Test and Report"
+name: 5.4.Test and Report
 on:
   push:
 jobs:
