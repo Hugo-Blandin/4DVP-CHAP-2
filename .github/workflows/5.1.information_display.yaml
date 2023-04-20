@@ -5,17 +5,8 @@ on:
     runs-on: ubuntu-latest
     steps:
     - name: Display Notice
-      run: echo "Ceci est une notice."
-      shell: bash
-      env:
-        TYPE: "notice"
+      run: echo "::notice::Ceci est une notice."
     - name: Display Warning
-      run: echo "Ceci est un avertissement."
-      shell: bash
-      env:
-        TYPE: "warning"
+      run: echo "::warning::Ceci est un avertissement."
     - name: Display Error
-      run: echo "Une erreur est survenue."
-      shell: bash
-      env:
-        TYPE: "error"
+      run: echo "::error::Une erreur est survenue."
