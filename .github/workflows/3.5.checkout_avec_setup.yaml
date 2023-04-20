@@ -12,14 +12,3 @@ jobs:
 
       - run : |
           python demo.py 
-#jobs: 
-#execute_script: 
- # runs-on: windows-latest 
- # steps: 
-#    - name: Checkout du code python 
- #   uses: actions/checkout@v2 
- #   - name: Configuration de Python 3.10 
-#    uses: actions/setup-python@v2 
- #     with: python-version: 3.10 
- #       - name: Exécution du script demo.py 
- #   run: python demo.py
