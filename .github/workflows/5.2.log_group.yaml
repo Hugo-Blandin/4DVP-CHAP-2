@@ -7,14 +7,7 @@ jobs:
     steps:
       - name: Create log group
         run: |
-          aws logs create-log-group --log-group-name ecole-it
-      - name: Log message in group
-        run: |
-          aws logs put-log-events --log-group-name ecole-it --log-stream-name log-stream-1 --log-events timestamp=$(date +%s000),message="Hello, ecole-it"
-      - name: Close log group
-        run: |
-          aws logs describe-log-streams --log-group-name ecole-it --log-stream-name-prefix log-stream-1 --query logStreams[0].uploadSequenceToken --output text > token.txt
-          aws logs put-log-events --log-group-name ecole-it --log-stream-name log-stream-1 --log-events timestamp=$(date +%s000),message="Closing log group" --sequence-token $(cat token.txt)
-      - name: Log message outside group
-        run: |
+          echo "::group::ecole-it"
+          echo "hello, ecole-it"
+          echo "::endgroup::"
           echo "This is not in the group"
