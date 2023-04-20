@@ -9,4 +9,4 @@ jobs:
     steps :
       - name: affiche var env #tiret du 6 car c'est un tableau d'objet
       run: |
-        echo S{{env.MESSAGE}}
+        echo ${{env.MESSAGE}}
