@@ -1,0 +1,21 @@
+name: 5.1.information_display.yaml
+on:
+  push:
+  information_display:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Display Notice
+      run: echo "Ceci est une notice."
+      shell: bash
+      env:
+        TYPE: "notice"
+    - name: Display Warning
+      run: echo "Ceci est un avertissement."
+      shell: bash
+      env:
+        TYPE: "warning"
+    - name: Display Error
+      run: echo "Une erreur est survenue."
+      shell: bash
+      env:
+        TYPE: "error"
