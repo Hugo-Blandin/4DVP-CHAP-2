@@ -1,4 +1,4 @@
-name: Mon workflow
+name: 4.2.confidential_data.yaml
 on:
   push:
     branches: [ main ]
